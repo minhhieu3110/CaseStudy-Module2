@@ -40,7 +40,7 @@ li{
 }
 .dropdown-menu{
     border: 1px solid;
-    margin-top: 6px;
+    margin-top: 5px;
     display: none;
     border-radius: 0 0 20px 20px;
     cursor: context-menu;
@@ -91,6 +91,18 @@ p{
     font-size: 12px;
     text-align: center;
 }
+.icon-item-new{
+    width: 20px;
+    background: #2187fc;
+    color: white;
+    border-radius: 20px;
+}
+.icon-item-attractive{
+    width: 20px;
+    background: #ef3434;
+    border-radius: 20px;
+    color: white;
+}
 .dropdown:hover .dropdown-menu{
     display: flex;
 }
@@ -100,6 +112,10 @@ p{
 }
 .item-nav a:hover{
     text-decoration: none;
+    font-weight: bold;
+}
+.dropdown-item{
+    color: black;
     font-weight: bold;
 }
 .dropdown-item a{
