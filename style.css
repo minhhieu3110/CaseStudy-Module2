@@ -1,0 +1,75 @@
+.carousel-inner{
+    position: relative;
+}
+.carousel-item video, img{
+    width: 100%;
+}
+.title{
+    position: absolute;
+    bottom: 400px;
+}
+h5{
+    color: black;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 35px;
+}
+.sub-title{
+    position: absolute;
+    bottom: 250px;
+}
+.btn-title button{
+    background: black;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    transition: 0.4s;
+}
+.btn-title ,.download button{
+    background: black;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.title-link a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    font-weight: bold;
+    /*transition: 0.4s;*/
+    /*position: relative;*/
+}
+.title-link a:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 110px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out;
+}
+.title-link a:hover::after{
+    transform: scaleX(1);
+}
+.btn-title, .ai button:hover{
+    background: rgba(255, 255, 255, 0.35);
+}
+p{
+    color: black;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 20px;
+}
+.btn-title button:hover{
+    background: rgba(0, 0, 0, 0.74);
+}
+.btn-title ,.download button:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+}
