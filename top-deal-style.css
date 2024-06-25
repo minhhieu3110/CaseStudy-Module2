@@ -1,0 +1,54 @@
+.top-deals{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 85px;
+}
+.deal-content ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.item-content button{
+    width: 195px;
+    height: 50px;
+    margin-left: 85px;
+    background: white;
+    border: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18.4px;
+    position: relative;
+}
+.item-content button:after{
+    content: "";
+    height: 3px;
+    width: 160px;
+    background: black;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    transform: scaleX(0);
+    transition: 0.4s all ease-in-out;
+}
+.item-content button:active::after{
+    transform: scaleX(1);
+}
+.item-content button:active{
+    border: dotted 3px black;
+    padding: 0;
+}
+#item-deal{
+    display: flex;
+    justify-content: space-between;
+}
+.ml-100{
+    margin-left: 100px;
+}
+.mr-100{
+    margin-right: 100px;
+}

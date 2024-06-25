@@ -3,7 +3,7 @@
     margin: 0;
 }
 [class^="col-"]{
-    /*border: solid 1px;*/
+    border: solid 1px;
     position: relative;
 }
 [class^="col-"] img{
