@@ -134,19 +134,16 @@
 .title-item-outstanding h5{
     text-align: center;
 }
-.btn-buy-item-outstanding{
-    position: absolute;
-    top: 340px;
-    left: 130px;
-    /*margin: 20px 120px;*/
-}
 .btn-buy-item-outstanding button{
     position: absolute;
+    top: 340px;
+    left: 50%;
+    /*transform: translate(-50%);*/
     background: black;
     color: white;
     border-radius: 20px;
     transition: 0.4s all ease-in-out;
-    transform: translateY(0);
+    transform: translate(-50%) translateY(0);
     opacity: 0;
 }
 .item-outstanding:hover img{
@@ -154,7 +151,7 @@
 }
 .item-outstanding:hover button{
     opacity: 1;
-    transform: translateY(-30px);
+    transform: translate(-50%) translateY(-30px);
 }
 .item-outstanding-sale{
     width: 40px;
@@ -166,7 +163,7 @@
     top: 18px;
     left: 20px;
 }
-.item-outstanding-new{
+.item-outstanding-new {
     width: 40px;
     background: #378137;
     color: white;
