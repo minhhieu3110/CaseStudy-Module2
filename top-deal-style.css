@@ -48,8 +48,8 @@
 .deal-banner{
     width: 100%;
     height: 600px;
-    background: #6c4c5b;
-    background: linear-gradient(-45deg, rgba(84, 54, 66) 0%, rgba(144, 107, 124, 0.94) 50%, rgba(220, 190, 202, 0.94) 100%);
+    /*background: #6c4c5b;*/
+    /*background: linear-gradient(-45deg, rgba(84, 54, 66) 0%, rgba(144, 107, 124, 0.94) 50%, rgba(220, 190, 202, 0.94) 100%);*/
     border-radius: 15px;
     position: relative;
 }
@@ -108,29 +108,28 @@
     row-gap: 10px;
     position: relative;
 }
-.deal-item .item-game{
-    border: 5px solid rgb(152, 72, 120);
+.deal-item .item-deal{
     width: 300px;
     height: 295px;
     border-radius: 20px;
 }
-.item-game{
+.item-deal{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.item-game img{
+.item-deal img{
     width: 100%;
     transition: 0.4s all ease-in-out;
 }
-.item-game > h5{
+.item-deal > h5{
     font-size: 20px;
     position: absolute;
     top: 185px;
     text-align: center;
 }
-.item-game .btn-item-game > button{
+.item-deal .btn-buy-item > button{
     position: absolute;
     top: 270px;
     left: 110px;
@@ -142,13 +141,16 @@
     transform: translateY(0);
     transition: 0.4s all ease;
 }
-.item-game:hover img{
+.item-deal:hover img{
     transform: scale(1.1);
 }
-.item-game:hover .btn-item-game button{
+.item-deal:hover .btn-buy-item button{
     visibility: visible;
     opacity: 1;
     transform: translateY(-20px);
+}
+.item-deal:hover{
+    border: 1px solid ;
 }
 .ml-100{
     margin-left: 100px;
@@ -159,4 +161,28 @@
 .margin-btn{
     margin-left: 30px;
     margin-right: 30px;
+}
+.deal-game{
+    background: #6c4c5b;
+    background: linear-gradient(-45deg, rgba(84, 54, 66) 0%, rgba(144, 107, 124, 0.94) 50%, rgba(220, 190, 202, 0.94) 100%);
+}
+.deal-trend{
+    background: #5b5c5e;
+    background: linear-gradient(-45deg, rgba(91, 93, 94) 0%, rgba(163, 168, 172, 0.94) 50%, rgba(245, 246, 248, 0.94) 100%);
+}
+.deal-practice{
+    background: #52513d;
+    background: linear-gradient(-45deg, rgba(82, 81, 61) 0%, rgba(132, 126, 98, 0.94) 50%, rgba(162, 158, 121, 0.94) 100%);
+}
+.item-game{
+    border: 5px solid rgb(152, 72, 120);
+    transition: 0.4s all ease-in-out;
+}
+.item-trend{
+    border: 5px solid rgb(172, 177, 181);
+    transition: 0.4s all ease-in-out;
+}
+.item-practice{
+    border: 5px solid rgb(128, 122, 96);
+    transition: 0.4s all ease-in-out;
 }
