@@ -11,9 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <link rel="stylesheet" href="nav-style.css">
     <link rel="stylesheet" href="carousel-style.css">
 <!--    <link rel="stylesheet" href="top-deal-style.css">-->
+    <link rel="stylesheet" href="outstanding-product-style.css">
     <link rel="stylesheet" href="featured-product-style.css">
 </head>
 <body>
@@ -655,15 +657,15 @@
                 </div>
                 <div class="col-12 menu-pro-outstanding">
                     <ul>
-                        <li class="item-menu-pro"><button>Ưu đãi</button></li>
-                        <li class="item-menu-pro"><button>Điện Thoại</button></li>
-                        <li class="item-menu-pro "><button>TV&AV</button></li>
-                        <li class="item-menu-pro"><button>Gia Dụng</button></li>
-                        <li class="item-menu-pro"><button>Màn Hình-Bộ Nhớ</button></li>
+                        <li class="item-menu-pro"><button data-target="endow-outstanding">Ưu đãi</button></li>
+                        <li class="item-menu-pro"><button data-target="phone-outstanding">Điện Thoại</button></li>
+                        <li class="item-menu-pro "><button data-target="tv-av-outstanding">TV&AV</button></li>
+                        <li class="item-menu-pro"><button data-target="appliances-outstanding">Gia Dụng</button></li>
+                        <li class="item-menu-pro"><button data-target="screen-outstanding">Màn Hình-Bộ Nhớ</button></li>
                     </ul>
                 </div>
                 <div class="container-product-outstanding">
-                    <div class="item-pro-outstanding" id="endow-outstanding active">
+                    <div class="item-pro-outstanding" id="endow-outstanding">
                         <div class="left">
                             <div class="item-group">
                                 <img src="image/pro-outstanding/samsung-galaxy-s24-ultra.png" alt="">
@@ -976,6 +978,76 @@
                     </div>
                 </div>
             </div>
+<!--            <div class="row" id="exclusive-product"></div>-->
+            <div class="featured-product">
+                <div class="phone-product-featured">
+                    <div class="key-feature">
+                        <h2>Di Động</h2>
+                    </div>
+                    <div class="tab-item-phone">
+                        <ul>
+                            <li class="tab-item"><button data-target="s24-ultra">Galaxy S24 Ultra</button></li>
+                            <li class="tab-item"><button data-target="s24-s24plus">Galaxy S24 | S24+</button></li>
+                            <li class="tab-item"><button data-target="flip-5">Galaxy Z Flip 5</button></li>
+                            <li class="tab-item"><button data-target="fold-5">Galaxy Z Fold 5</button></li>
+                            <li class="tab-item"><button data-target="tab-s9">Galaxy Tab S9 Series</button></li>
+                        </ul>
+                    </div>
+                    <div class="item-key-featured">
+                        <div class="item-phone" id="s24-ultra">
+                            <img src="image/featured-product/phone/galaxy-s24-ultra.png" alt="">
+                            <div class="title-item-phone">
+                                <h1 style="margin-bottom: 30px">Galaxy S24 Ultra</h1>
+                                <p>Ưu đãi đến 5 triệu đồng</p>
+                                <p>Thu cũ đổi mới hỗ trợ thêm đến 2 triệu đồng</p>
+                                <a href="#" style="margin-right: 20px">Tìm hiểu thêm</a>
+                                <button style="height: 30px">Mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="item-phone" id="s24-s24plus">
+                            <img src="image/featured-product/phone/galaxy-s24-s24+.png" alt="">
+                            <div class="title-item-phone">
+                                <h1 style="margin-bottom: 30px">Galaxy S24 | S24+</h1>
+                                <p>Ưu đãi đến 1 triệu đồng</p>
+                                <p>Thanh toán trước hỗ trợ thêm 1 triệu đồng</p>
+                                <a href="#" style="margin-right: 20px">Tìm hiểu thêm</a>
+                                <button style="height: 30px">Mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="item-phone" id="flip-5">
+                            <img src="image/featured-product/phone/galaxy-flip-5.png" alt="">
+                            <div class="title-item-phone">
+                                <h1 style="margin-bottom: 30px">Galaxy Z Flip 5</h1>
+                                <p>Ưu đãi đến 9 triệu đồng</p>
+                                <p>Thanh toán trước giảm 8% tối đa triệu đồng</p>
+                                <a href="#" style="margin-right: 20px">Tìm hiểu thêm</a>
+                                <button style="height: 30px">Mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="item-phone" id="fold-5">
+                            <img src="image/featured-product/phone/galaxy-fold-5.png" alt="">
+                            <div class="title-item-phone">
+                                <h1 style="margin-bottom: 30px">Galaxy Z Fold 5</h1>
+                                <p>Ưu đãi đến 7 triệu đồng</p>
+                                <p>Thanh toán trước giảm 8% tối đa triệu đồng</p>
+                                <a href="#" style="margin-right: 20px">Tìm hiểu thêm</a>
+                                <button style="height: 30px">Mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="item-phone" id="tab-s9">
+                            <img src="image/featured-product/phone/galaxy-tab-s9-series.png" alt="">
+                            <div class="title-item-phone">
+                                <h1 style="margin-bottom: 30px">Galaxy Tab S9 Series</h1>
+                                <p>Thu cũ đổi mới hỗ trợ thêm 1 triệu đồng</p>
+                                <a href="#" style="margin-right: 20px">Tìm hiểu thêm</a>
+                                <button style="height: 30px">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tv-loa-product-featured"></div>
+                <div class="appliances-product-featured"></div>
+            </div>
 <!--            <div class="row" id="top-deal">-->
 <!--                <div class="col-12 top-deals">Top deal ưu đãi đậm</div>-->
 <!--            </div>-->
@@ -1148,5 +1220,6 @@
         <div class="col-1"></div>
     </div>
 </div>
+<script src="main.js"></script>
 </body>
 </html>

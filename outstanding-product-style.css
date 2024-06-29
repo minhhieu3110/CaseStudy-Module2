@@ -1,0 +1,204 @@
+.pro-outstanding{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px;
+}
+.menu-pro-outstanding ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-menu-pro{
+    margin: 40px;
+}
+.item-menu-pro button{
+    font-weight: bold;
+    border: none;
+    background: none;
+    position: relative;
+}
+.item-menu-pro button:after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.4s all ease-in-out;
+    transform: scaleX(0);
+}
+.item-menu-pro:hover button:after{
+    transform: scaleX(1);
+}
+.item-pro-outstanding{
+    margin: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-pro-outstanding .left, .right{
+    width: calc(100% /2.04);
+    height: 700px;
+}
+.item-pro-outstanding .left, .right{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1px;
+    row-gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.left .item-group{
+    width: calc(100% /2.04);
+    background: #f4f4f4;
+}
+.left .item-left{
+    width: 100%;
+    background: #f4f4f4;
+}
+.left .item-group > img{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    transition: 0.4s;
+}
+.left .item-left > img{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    transition: 0.4s;
+}
+.title-pro-outstanding{
+    margin-top: 15px;
+}
+.title-pro-outstanding h4, h6{
+    text-align: center;
+    line-height: 1.5;
+}
+.btn-buy-pro-outstanding button{
+    position: absolute;
+    /*left: 320px;*/
+    top: 700px;
+    left: 50%;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    transition: 0.4s all ease-in-out;
+    transform: translate(-50%) translateY(0);
+    opacity: 0;
+}
+.title-pro-outstanding h6{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.4s all ease-in-out;
+}
+.left:hover .item-group img{
+    transform: scale(1.2);
+}
+.left:hover .item-left img{
+    transform: scale(1.2);
+}
+.left:hover button{
+    transform: translate(-50%) translateY(-35px);
+    opacity: 1;
+}
+.left:hover .title-pro-outstanding h6{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.right .item-outstanding{
+    width: calc(100% /2.04);
+    height: calc(100% /2.04);
+    background: #f4f4f4;
+    border-radius: 20px;
+    position: relative;
+}
+.right .item-outstanding img{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+}
+.title-item-outstanding{
+    margin-top: 250px;
+}
+.title-item-outstanding h5{
+    text-align: center;
+}
+.btn-buy-item-outstanding button{
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    /*transform: translate(-50%);*/
+    background: black;
+    color: white;
+    border-radius: 20px;
+    transition: 0.4s all ease-in-out;
+    transform: translate(-50%) translateY(0);
+    opacity: 0;
+}
+.item-outstanding:hover img{
+    transform: scale(1.1);
+}
+.container-product-outstanding .item-outstanding:hover button{
+    opacity: 1;
+    transform: translate(-50%) translateY(-30px);
+}
+
+.container-product-outstanding{
+    position: relative;
+    border: 1px;
+    overflow: hidden;
+}
+.item-pro-outstanding #endow-outstanding{
+    position: absolute;
+    left: 0;
+}
+#endow-outstanding{
+    visibility: visible;
+    transition: 0.4s all ease-in-out;
+    transform: translateX(0);
+}
+#phone-outstanding, #tv-av-outstanding, #appliances-outstanding, #screen-outstanding{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.4s all ease-in-out;
+    transform: translateX(100%);
+}
+/*.container-product-outstanding:hover > #phone-outstanding{*/
+/*    visibility: visible;*/
+/*    transform: translateX(0);*/
+/*}*/
+.item-outstanding-sale{
+    width: 40px;
+    background: rgba(217, 20, 20, 0.75);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+.item-outstanding-new {
+    width: 40px;
+    background: #378137;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
