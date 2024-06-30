@@ -1,19 +1,16 @@
-
+/*css: Featured Phone*/
 .featured-product{
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     margin-top: 200px;
 }
 .phone-product-featured, .tv-loa-product-featured, .appliances-product-featured{
-    border: solid;
+    /*border: solid;*/
     height: 1000px;
 }
-.phone-product-featured{
+.phone-product-featured,.tv-loa-product-featured{
     background: #f4f4f4;
     text-align: center;
     overflow: hidden;
-}
-.key-feature, .tab-item-phone{
-    border: 1px solid;
 }
 .tab-item-phone ul{
     display: flex;
@@ -57,12 +54,14 @@
     left: 0;
 }
 #s24-ultra{
+    width: 100%;
     visibility: visible;
     transition: 0.4s all ease-in-out;
     transform: translateX(0);
 }
 #s24-s24plus, #flip-5, #fold-5, #tab-s9{
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -72,7 +71,7 @@
 }
 .title-item-phone{
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -108,4 +107,198 @@
 }
 .title-item-phone button:hover{
     background: rgba(0, 0, 0, 0.63);
+}
+
+/*css:Featured TV&Loa*/
+.tv-loa-product-featured{
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    transform: translateX(0);
+    position: relative;
+    overflow: hidden;
+}
+.tv-loa-product-featured > .key-feature h2{
+    color: white;
+}
+.tab-item-tv-av ul{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.tab-item-tv-av .tab-item button{
+    margin: 0 20px;
+    font-weight: bold;
+    color: white;
+    width: auto;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.tab-item-tv-av .tab-item button:after{
+    content: "";
+    width: 100%;
+    background: white;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.4s all ease-in-out;
+    transform: scaleX(0);
+}
+.tab-item-tv-av .tab-item button:hover::after{
+    transform: scaleX(1);
+}
+.item-key-featured{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+.item-tv-av > .title-item-tv-av > h1{
+    color: white;
+}
+.title-item-tv-av a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.title-item-tv-av a:after{
+    content: "";
+    background: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.4s all ease-in-out;
+}
+.title-item-tv-av a:hover::after{
+    transform: scaleX(1);
+}
+.title-item-tv-av button{
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s all ease-in-out;
+}
+.title-item-tv-av button:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
+#neo-8k{
+    position: absolute;
+    top: 70%;
+    visibility: visible;
+    transition: 0.6s all ease-in-out;
+    transform:translateX(0);
+}
+#neo-4k, #oled, #the-frame, #loa-tranh{
+    position: absolute;
+    visibility: hidden;
+    top: 70%;
+    transform:translateX(100%);
+    transition: 0.6s all ease-in-out;
+}
+
+/*css: Featured Gia Dung*/
+
+.appliances-product-featured{
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    transform: translateX(0);
+    position: relative;
+    overflow: hidden;
+}
+.appliances-product-featured > .key-feature h2{
+    color: black;
+    text-align: center;
+}
+.tab-item-appliances ul{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.tab-item-appliances .tab-item button{
+    margin: 0 20px;
+    font-weight: bold;
+    color: black;
+    width: auto;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.tab-item-appliances .tab-item button:after{
+    content: "";
+    width: 100%;
+    background: black;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.4s all ease-in-out;
+    transform: scaleX(0);
+}
+.tab-item-appliances .tab-item button:hover::after{
+    transform: scaleX(1);
+}
+.item-key-featured{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+.item-appliances > .title-item-appliances > h1{
+    color: black;
+}
+.title-item-appliances a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.title-item-appliances a:after{
+    content: "";
+    background: black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.4s all ease-in-out;
+}
+.title-item-appliances a:hover::after{
+    transform: scaleX(1);
+}
+.title-item-appliances button{
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s all ease-in-out;
+}
+.title-item-appliances button:hover{
+    background: rgba(0, 0, 0, 0.71);
+}
+#tu-lanh{
+    position: absolute;
+    top: 70%;
+    visibility: visible;
+    transition: 0.6s all ease-in-out;
+    transform:translateX(0);
+}
+#thiet-bi-bep, #may-giat, #dieu-hoa, #gia-dung{
+    position: absolute;
+    visibility: hidden;
+    top: 70%;
+    transform:translateX(100%);
+    transition: 0.6s all ease-in-out;
 }

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Outstanding Product
 
 document.addEventListener("DOMContentLoaded", function () {
-    var textButtonPro = document.querySelectorAll(".tab-item button");
+    var textButtonPro = document.querySelectorAll(".tab-item-phone button");
     textButtonPro.forEach(function (button) {
         button.addEventListener("click", function () {
             var targetPro = this.getAttribute("data-target");
@@ -39,4 +39,83 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     })
 })
-//Featured Product
+//Featured Product Phone
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var textButtonProTV = document.querySelectorAll(".tab-item-tv-av button");
+    var containerTV = document.querySelector(".tv-loa-product-featured")
+
+    textButtonProTV.forEach(function (button) {
+        button.addEventListener("click", function () {
+            var targetProTV = this.getAttribute("data-target");
+            var targetBgTV = this.getAttribute("data-bg");
+            var targetProElementTV = document.getElementById(targetProTV);
+
+            var itemProsTV = document.querySelectorAll(".item-tv-av");
+            itemProsTV.forEach(function (item) {
+                item.style.visibility = "hidden";
+                item.style.transform = 'translateX(100%)'
+                // containerTV.style.backgroundImage = `url("${targetBgTV}")`
+
+            });
+            if (targetProElementTV) {
+                targetProElementTV.style.visibility = "visible";
+                targetProElementTV.style.transform = 'translateX(0%)'
+                containerTV.style.backgroundImage = `url("${targetBgTV}")`
+            }
+        })
+    })
+    if (textButtonProTV.length > 0) {
+        var firstButton = textButtonProTV[0];
+        var firstTargetProTV = firstButton.getAttribute("data-target");
+        var firstTargetBgTV = firstButton.getAttribute("data-bg");
+        var firstTargetProElementTV = document.getElementById(firstTargetProTV);
+
+        if (firstTargetProElementTV) {
+            firstTargetProElementTV.style.visibility = "visible";
+            firstTargetProElementTV.style.transform = 'translateX(0%)';
+            containerTV.style.backgroundImage = `url("${firstTargetBgTV}")`;
+        }
+    }
+})
+
+//Appliances
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var textButtonProAppliances = document.querySelectorAll(".tab-item-appliances button");
+    var containerAppliances = document.querySelector(".appliances-product-featured")
+    
+    textButtonProAppliances.forEach(function (button) {
+        button.addEventListener("click", function () {
+            var targetProAppliances = this.getAttribute("data-target");
+            var targetBgAppliances = this.getAttribute("data-bg");
+            var targetProElementAppliances = document.getElementById(targetProAppliances);
+            
+            var itemProsAppliances = document.querySelectorAll(".item-Appliances");
+            itemProsAppliances.forEach(function (item) {
+                item.style.visibility = "hidden";
+                item.style.transform = 'translateX(100%)'
+            });
+            if (targetProElementAppliances) {
+                targetProElementAppliances.style.visibility = "visible";
+                targetProElementAppliances.style.transform = 'translateX(0%)'
+                containerAppliances.style.backgroundImage = `url("${targetBgAppliances}")`
+            }
+        })
+    })
+    if (textButtonProAppliances.length > 0) {
+        var firstButtonAppliances = textButtonProAppliances[0];
+        var firstTargetProAppliances = firstButtonAppliances.getAttribute("data-target");
+        var firstTargetBgAppliances = firstButtonAppliances.getAttribute("data-bg");
+        var firstTargetProElementAppliances = document.getElementById(firstTargetProAppliances);
+        
+        if (firstTargetProElementAppliances) {
+            firstTargetProElementAppliances.style.visibility = "visible";
+            firstTargetProElementAppliances.style.transform = 'translateX(0%)';
+            containerAppliances.style.backgroundImage = `url("${firstTargetBgAppliances}")`;
+        }
+    }
+})
