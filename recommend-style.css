@@ -1,17 +1,90 @@
 .recommend {
+    margin-left: 10%;
     margin-top: 50px;
-    border: solid;
-    width: 100%;
-    height: 600px;
+    width: 80%;
+    height: 650px;
     text-align: center;
 }
-.item-recommend-for-you{
+.item-recommend-for-you > .swiper {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.item-recommend{
-    width: calc(100%/4.2);
+.swiper-wrapper{
+    width: 100%;
     height: 500px;
-    border: 1px solid;
+    /*border: 1px solid red;*/
+}
+.swiper-slide{
+    background: #f7f7f7;
+    border-radius: 20px;
+}
+.swiper-slide .image{
+    margin-top: 20px;
+    height: 140px;
+    position: relative;
+}
+.swiper-slide .image > .watch-6-vang{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-slide .image > .watch-6-den{
+    position: absolute;
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-slide .sub-title-item-recommend{
+    margin-top: 20px;
+    position: relative;
+}
+.swiper-slide > .sub-title-item-recommend  > .watch-6-vang{
+    position: absolute;
+    left: 50%;
+    visibility: visible;
+    transform: translateX(-50%);
+}
+.swiper-slide  .sub-title-item-recommend > .watch-6-den {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-slide .btn-color-item-recommend button{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 100%;
+}
+.swiper-slide .price-item-recommend{
+    margin-top: 30%;
+}
+.swiper-slide .price-item-recommend p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.swiper-slide .discount-item-recommend p:not(s){
+    color: blue;
+}
+.swiper-slide .btn-buy-item-recommend button{
+    margin: 20px 0;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+}
+.swiper-slide .btn-buy-item-recommend button:hover{
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.swiper-button-next, .swiper-button-prev{
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color:  white;
+    background: rgba(0, 0, 0, 0.47);
+    padding: 20px;
+    border-radius: 30px;
 }

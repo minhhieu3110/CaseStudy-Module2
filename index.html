@@ -11,13 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <link rel="stylesheet" href="nav-style.css">
     <link rel="stylesheet" href="carousel-style.css">
 <!--    <link rel="stylesheet" href="top-deal-style.css">-->
     <link rel="stylesheet" href="outstanding-product-style.css">
     <link rel="stylesheet" href="featured-product-style.css">
     <link rel="stylesheet" href="recommend-style.css">
+    <link rel="stylesheet" href="exclusive-style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Script Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 </head>
 <body>
 <div class="container-fluid">
@@ -979,7 +987,12 @@
                     </div>
                 </div>
             </div>
-<!--            <div class="row" id="exclusive-product"></div>-->
+            <div class="exclusive-product">
+                <div class="title-exclusive">
+                    <h2>Độc quyền Samsung.com</h2>
+                    <a href="#" style="margin: 15px">Tìm hiểu thêm</a>
+                </div>
+            </div>
             <div class="featured-product">
                 <div class="phone-product-featured">
                     <div class="key-feature">
@@ -1155,10 +1168,249 @@
             <div class="recommend">
                 <h1>Gợi ý dành cho bạn</h1>
                 <div class="item-recommend-for-you">
-                    <div class="item-recommend"></div>
-                    <div class="item-recommend"></div>
-                    <div class="item-recommend"></div>
-                    <div class="item-recommend"></div>
+                    <div class="swiper item-recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="image/recommend/galaxy-watch-6-vang.png" class="watch-6-vang" alt="">
+                                    <img src="image/recommend/galaxy-watch-6-den.png" alt="" class="watch-6-den">
+                                </div>
+                                <div class="title-item-recommend">
+                                    <h5>Galaxy Watch6 (Bluetooth 40mm)</h5>
+                                </div>
+                                <div class="sub-title-item-recommend">
+                                    <p class="watch-6-vang"><b>Màu sắc: </b>Vàng khí chất</p>
+                                    <p class="watch-6-đen" style="visibility: hidden"><b>Màu sắc: </b>Đen phong cách</p>
+                                </div>
+                                <div class="btn-color-item-recommend">
+                                    <button class="vang-khi-chat" style="background: #F0EAE0" data-target="watch-6-vang"></button>
+                                    <button class="den-phong-cach" style="background: #4A4A4D" data-target="watch-6-den"></button>
+                                </div>
+                                <div class="price-item-recommend">
+                                    <p>5,490,000 <u>đ</u></p>
+                                </div>
+                                <div class="discount-item-recommend">
+                                    <p>Chiết khấu 1,500,000 <u>đ</u> (giá gốc <s style="color: black">6,990,000 <u>đ</u></s>)</p>
+                                </div>
+                                <div class="btn-buy-item-recommend">
+                                    <button>Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- Nếu cần pagination -->
+<!--                        <div class="swiper-pagination"></div>-->
+                    </div>
                 </div>
             </div>
 
@@ -1334,6 +1586,8 @@
         <div class="col-1"></div>
     </div>
 </div>
-<script src="main.js"></script>
+
 </body>
+<script src="main.js"></script>
+<script src="swiper.js"></script>
 </html>
