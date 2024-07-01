@@ -3,5 +3,50 @@
 }
 .title-exclusive{
     display: flex;
+}
+.title-exclusive a{
+    text-decoration: none;
+    color: black;
+}
+.exclusive-product > .swiper-slide{
+    width: calc(100% / 5);
+    /*border-radius: 30px;*/
+}
+.exclusive-product .swiper-slide .image-exclusive{
+    overflow: hidden;
+}
+.exclusive-product  .swiper-slide .image-exclusive img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s all ease-in-out;
+    margin: 0;
+}
+.title-exclusive{
+    margin-top: 10%;
+    text-align: center;
+    height: 80px;
+}
+.exclusive-product > .swiper-slide{
     position: relative;
+    overflow: hidden;
+}
+.btn-exclusive button{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s all ease-in-out;
+    transform: translateY(0) translateX(-50%);
+    visibility: hidden;
+}
+.exclusive-product .swiper-slide:hover img{
+    transform: scale(1.1);
+    object-fit: cover;
+}
+.exclusive-product .swiper-slide:hover button{
+    transform: translateY(-20px) translateX(-50%);
+    visibility: visible;
 }
