@@ -7,7 +7,7 @@
     /*border: solid;*/
     height: 1000px;
 }
-.phone-product-featured,.tv-loa-product-featured{
+.phone-product-featured,.tv-loa-product-featured, .appliances-product-featured{
     background: #f4f4f4;
     text-align: center;
     overflow: hidden;
@@ -273,6 +273,7 @@
     transform: scaleX(0);
     transition: 0.4s all ease-in-out;
 }
+
 .title-item-appliances a:hover::after{
     transform: scaleX(1);
 }
@@ -295,10 +296,28 @@
     transition: 0.6s all ease-in-out;
     transform:translateX(0);
 }
-#thiet-bi-bep, #may-giat, #dieu-hoa, #gia-dung{
+#thiet-bi-bep, #may-giat, #dieu-hoa, #gia-dung {
     position: absolute;
     visibility: hidden;
     top: 70%;
-    transform:translateX(100%);
+    transform: translateX(100%);
     transition: 0.6s all ease-in-out;
+}
+#dieu-hoa > .title-item-appliances a{
+    color: white;
+    position: relative;
+}
+#dieu-hoa > .title-item-appliances a:after{
+    content: "";
+    background: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.4s all ease-in-out;
+}
+#dieu-hoa > .title-item-appliances a:hover::after{
+    transform: scaleX(1);
 }

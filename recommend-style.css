@@ -1,0 +1,17 @@
+.recommend {
+    margin-top: 50px;
+    border: solid;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.item-recommend-for-you{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.item-recommend{
+    width: calc(100%/4.2);
+    height: 500px;
+    border: 1px solid;
+}

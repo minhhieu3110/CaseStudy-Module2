@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //Appliances
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     var textButtonProAppliances = document.querySelectorAll(".tab-item-appliances button");
     var containerAppliances = document.querySelector(".appliances-product-featured")
@@ -94,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var targetBgAppliances = this.getAttribute("data-bg");
             var targetProElementAppliances = document.getElementById(targetProAppliances);
             
-            var itemProsAppliances = document.querySelectorAll(".item-Appliances");
+            var itemProsAppliances = document.querySelectorAll(".item-appliances");
             itemProsAppliances.forEach(function (item) {
                 item.style.visibility = "hidden";
                 item.style.transform = 'translateX(100%)'
@@ -102,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (targetProElementAppliances) {
                 targetProElementAppliances.style.visibility = "visible";
                 targetProElementAppliances.style.transform = 'translateX(0%)'
-                containerAppliances.style.backgroundImage = `url("${targetBgAppliances}")`
+                containerAppliances.style.backgroundImage = `url("${targetBgAppliances}")`;
             }
         })
     })
@@ -118,4 +119,4 @@ document.addEventListener("DOMContentLoaded", function () {
             containerAppliances.style.backgroundImage = `url("${firstTargetBgAppliances}")`;
         }
     }
-})
+});
