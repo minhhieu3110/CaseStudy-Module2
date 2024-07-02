@@ -1,0 +1,92 @@
+.samsung-explore{
+    width: 100%;
+}
+h2{
+    font-size: 50px;
+    margin: 0 0 50px;
+    left: 50%;
+    text-align: center;
+}
+.explore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.image-content-explore, .content-explore{
+    width: calc(100% /2.1);
+    height: 500px;
+}
+.image-content-explore{
+    position: relative;
+}
+.image-content-explore [class^="explore-0"]{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.image-content-explore [class^="explore-0"] img{
+    width: 100%;
+    border-radius: 30px;
+    margin: 0;
+    transition: 0.4s all ease-in-out;
+}
+.image-content-explore [class^="explore-0"] img:hover{
+    transform: scale(1.1);
+}
+.image-content-explore .explore-01{
+    position: absolute;
+    visibility: visible;
+    transition: 0.4s all ease-in-out;
+}
+.image-content-explore [class^="explore-0"]:not(.explore-01){
+    position: absolute;
+    visibility: hidden;
+    transition: 0.4s all ease-in-out;
+}
+.content-explore .straight{
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+.content-explore .content [class^="explore-0"]{
+    font-size: 20px;
+    transition: 0.4s all ease-in-out;
+}
+.content-explore .content .title-explore a{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+    position: relative;
+}
+.title-explore a:after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scaleX(0);
+}
+.title-explore a:hover:after{
+    transform: scaleX(1);
+}
+.explore-01 > hr{
+    visibility: visible;
+    transition: 0.4s all ease-in-out;
+}
+.content-explore .content [class^="explore-0"]:not(.explore-01)> .straight, .title-explore, hr{
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.4s all ease-in-out;
+}
+[class^="explore-0"]:hover .image-content-explore img{
+    visibility: visible;
+}
+[class^="explore-0"]:hover > .straight, .title-explore{
+    visibility: visible;
+    cursor: pointer;
+}
