@@ -155,3 +155,9 @@ p{
     width: 500px;
 
 }
+@media only screen and (max-width : 1800px) {
+    .col-8 > .nav-bar{
+        display: none;
+    }
+    
+}
